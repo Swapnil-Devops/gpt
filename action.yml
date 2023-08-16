@@ -16,5 +16,5 @@ outputs:
     description: "The generated text from OpenAI"
 
 runs:
-  using: "node12"
+  using: "node16"
   main: "index.js"
