@@ -8,7 +8,7 @@ async function main() {
 
     const openai = new OpenAIApi(new Configuration({ apiKey }));
     const completion = await openai.createCompletion({
-      model: "text-davinci-003",
+      model: "gpt-3.5-turbo",
       prompt: prompt,
       temperature: 0.7, // You can set the temperature value here
     });
