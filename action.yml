@@ -1,0 +1,20 @@
+name: Generate Text with OpenAI
+
+description: |
+  This action generates text using the OpenAI API.
+
+inputs:
+  openai-api-key:
+    description: "The API key for OpenAI"
+    required: true
+  prompt:
+    description: "The text prompt for generating content"
+    required: true
+
+outputs:
+  generated-text:
+    description: "The generated text from OpenAI"
+
+runs:
+  using: "node12"
+  main: "index.js"
